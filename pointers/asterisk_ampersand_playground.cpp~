@@ -1,0 +1,12 @@
+#include <iostream>
+
+int main()
+{
+  char v[6]; //array of 6 chars
+  char* p; // pointer to character
+  char x = *p; // *p is the object that p points to
+
+  std::cout << "v: " << v << std::endl;
+  std::cout << "p: " << p << std::endl;
+  std::cout << "x: " << x << std::endl;
+}
