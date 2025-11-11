@@ -1,0 +1,35 @@
+#include <iostream>
+
+bool accept()
+{
+ //char and bool stuff				  
+                                                
+ char answer2 = 0;				  
+ std::cout << "yes or no (y or n)?" << std::endl;
+ std::cin >> answer2;				  
+                                                
+ if (answer2 == 'y') return true;		  
+ return false;					  
+}
+
+
+
+int main()
+{
+  const int x = 2;
+  int y = 44;
+  constexpr double test = x*2.33;
+  auto implicit = 1.3;
+
+  std::cout << "constexpr variable works: " << test << std::endl;
+  std::cout << "implicit variable value is " << implicit << " and it's type is "
+	    << typeid(implicit).name() << std::endl; //typeid for auto is denoted differently
+
+  int answer = 0;
+  std::cout << "what is your number?" << std::endl;
+  std::cin >> answer;
+
+  std::cout << "your number + 2 is: " << answer + 2 << std::endl;
+
+  std::cout << accept() << std::endl;
+}
