@@ -6,3 +6,8 @@
 - using {} for variable initialization
 - const, constexpr, auto
 - prefix/postfix increment differences in implementation
+
+## 11/11/25:
+- review on pointers, references, loops
+- review on structs, classes
+- enums, enum class
