@@ -15,7 +15,7 @@ double read_and_sum(SimpleVector& v)
 {
   //read elements into vector
   for (int i=0; i!=v.sz; ++i) {
-    v.elem[i] = i;
+    std::cin >> v.elem[i];
   }
 
   double sum;
