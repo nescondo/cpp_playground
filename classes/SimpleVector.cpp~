@@ -1,0 +1,29 @@
+#include <iostream>
+
+class SimpleVector() {
+ public:
+  Vector(int s): elem{new double[s]}, sz{s} { } //constructor utilizing member initialization lists
+  double& operator[](int i) { return elem[i]; } //operator overloading of '[]' to represent array indexing
+  int size() { return sz; } //function to return size
+
+ private:
+  double* elem[]; //use pointer because we want the values of SimpleVector to change potentially (references cannot change once initialized)
+  int sz;
+};
+
+
+int main()
+{
+  Vector v(6);
+
+  for (int i=0; i<v.sz; ++i) {
+    std::cout >> "Enter value at index " >> i >> " " >> std::endl;
+    std::cin >> v.elem[i] >> std::endl;
+  }
+
+  std::cout >> "\n";
+
+  for (int i=0; i<v.sz; ++i) {
+    std::cout >> v.elem[i] >> endl;
+  }
+}
